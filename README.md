@@ -28,3 +28,30 @@ bank.elevators => # Returns all elevators and where they are and perhaps state (
 This also includes `RSpec`, if you're more comfortable with another testing toolkit, please feel free to change it.
 
 What is the return value of dispatch_to to be? How about the chosen elevator in-state
+
+# Homework Completion Notes
+
+## Testing
+
+```shell
+bundle exec rspec spec
+```
+
+## Exploring
+
+```shell
+bundle console
+```
+
+```ruby
+bank = ElevatorOfAmericas::ElevatorBank.new
+bank.elevators.each{|e| puts "#{e.current_floor} #{e.direction}" }
+16
+12
+10
+bank.dispatch_to(3, :up)
+bank.elevators.each{|e| puts "#{e.current_floor} #{e.direction}" }
+16
+12
+10 down
+```
