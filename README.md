@@ -62,7 +62,7 @@ Extra credit feature: Send idle elevators to the most frequently dispatched-from
 
 With the 'extra' branch, when ElevatorBankExtra is used, the system persists dispatches to a file and allows for concurrent elevator movement via multithreading. `dispatch_to` will return immediately but send the elevator on a timed journey to the target floor.
 
-The travelling of the elevator is slowed by two things: a manual 1 second delay and open a file, reading it and closing it. This allows for exploring of the dispatches as the elevators move around.
+The travelling of the elevator is slowed by two things: a manual 1 second delay and the opening of a file, reading of it and closing it. This allows for exploring of the dispatches as the elevators move around.
 
 ```
 git checkout extra
