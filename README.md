@@ -58,6 +58,10 @@ bank.elevators.each{|e| puts "#{e.current_floor} #{e.direction}" }
 
 ## Exploring Extra
 
+Extra credit feature: Store busy dispatch floors, then send idle elevators to the most frequently dispatched-from floor. Persist dispatches to a file and allow for concurrent elevator movement via multithreading.
+
+If ElevatorBankExtra is used, dispatch_to will return immediately but send the elevator on a timed journey to the target floor. This means that multiple, concurrent dispatches can be handled.
+
 ```
 git checkout extra
 ```
