@@ -28,7 +28,3 @@ bank.elevators => # Returns all elevators and where they are and perhaps state (
 This also includes `RSpec`, if you're more comfortable with another testing toolkit, please feel free to change it.
 
 What is the return value of dispatch_to to be? How about the chosen elevator in-state
-
-
-todo should be lower
-rename to best available
