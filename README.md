@@ -37,7 +37,7 @@ What is the return value of dispatch_to to be? How about the chosen elevator in-
 bundle exec rspec spec
 ```
 
-## Exploring
+## Exploring Answer
 
 ```shell
 bundle console
@@ -54,4 +54,61 @@ bank.elevators.each{|e| puts "#{e.current_floor} #{e.direction}" }
 16
 12
 10 down
+```
+
+## Exploring Extra
+
+```
+git checkout extra
+```
+
+```ruby
+bank = ElevatorOfAmericas::ElevatorBankExtra.new
+bank.elevators.each{|e| puts "#{e.current_floor} #{e.direction}" }
+8
+7
+17
+bank.dispatch_to(3, :up)
+```
+
+Wait a moment
+
+
+```ruby
+bank.elevators.each{|e| puts "#{e.current_floor} #{e.direction}" }
+8
+7 down
+17
+```
+
+Wait a moment
+
+
+```ruby
+bank.elevators.each{|e| puts "#{e.current_floor} #{e.direction}" }
+8
+7 down
+17
+```
+
+Wait a moment
+
+
+```ruby
+bank.elevators.each{|e| puts "#{e.current_floor} #{e.direction}" }
+8
+3
+17
+```
+
+##
+
+```ruby
+bank.dispatches.most_frequent
+"3"
+bank.dispatch_to(7, :up)
+bank.elevators.each{|e| puts "#{e.current_floor} #{e.direction}" }
+7
+3
+3
 ```
