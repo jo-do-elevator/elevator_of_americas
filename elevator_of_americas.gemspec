@@ -6,9 +6,9 @@ require 'elevator_of_americas/version'
 Gem::Specification.new do |spec|
   spec.name          = "elevator_of_americas"
   spec.version       = ElevatorOfAmericas::VERSION
-  spec.authors       = ["Robert Ross"]
+  spec.authors       = ["Robert Ross", "Jody Alkema"]
   spec.email         = ["rross@digitalocean.com"]
-  spec.summary       = %q{TODO: Elevator dispatch program.}
+  spec.summary       = %q{Elevator dispatch program for the people.}
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
